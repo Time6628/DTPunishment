@@ -47,9 +47,7 @@ public class CommandUnmute implements CommandExecutor {
 		if (src instanceof ConsoleSource)
 			src.sendMessage(notification);
 
-		if (player.isPresent()) {
-			player.get().sendMessage(notification);
-		}
+        player.ifPresent(player1 -> player1.sendMessage(notification));
 
 		for (Player p : server.getOnlinePlayers()) {
 			if (p.hasPermission("dtpunishment.staff.notify") || p.getPlayer().get() == src) {

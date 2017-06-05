@@ -15,7 +15,7 @@ import com.google.inject.Inject;
 import me.morpheus.dtpunishment.data.DataStore;
 import me.morpheus.dtpunishment.utils.Util;
 
-public class CommandPlayerInfo implements CommandExecutor {
+class CommandPlayerInfo implements CommandExecutor {
 
 	private DataStore dataStore;
 

@@ -6,33 +6,33 @@ import java.util.UUID;
 
 public interface DataStore {
 
-    public void init();
+    void init();
 
-    public int getBanpoints(UUID player);
+    int getBanpoints(UUID player);
 
-    public LocalDate getBanpointsUpdatedAt(UUID player);
+    LocalDate getBanpointsUpdatedAt(UUID player);
 
-    public int getMutepoints(UUID player);
+    int getMutepoints(UUID player);
 
-    public LocalDate getMutepointsUpdatedAt(UUID player);
+    LocalDate getMutepointsUpdatedAt(UUID player);
 
-    public boolean isMuted(UUID player);
+    boolean isMuted(UUID player);
 
-    public Instant getExpiration(UUID player);
+    Instant getExpiration(UUID player);
 
-    public void addBanpoints(UUID player, int amount);
+    void addBanpoints(UUID player, int amount);
 
-    public void removeBanpoints(UUID player, int amount);
+    void removeBanpoints(UUID player, int amount);
 
-    public void addMutepoints(UUID player, int amount);
+    void addMutepoints(UUID player, int amount);
 
-    public void removeMutepoints(UUID player, int amount);
+    void removeMutepoints(UUID player, int amount);
 
-    public void mute(UUID player, Instant expiration);
+    void mute(UUID player, Instant expiration);
 
-    public void unmute(UUID player);
+    void unmute(UUID player);
 
-    public void createUser(UUID player);
+    void createUser(UUID player);
 
-    public boolean userExists(UUID player);
+    boolean userExists(UUID player);
 }

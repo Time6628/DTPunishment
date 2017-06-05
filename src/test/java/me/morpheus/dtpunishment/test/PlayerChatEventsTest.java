@@ -1,6 +1,5 @@
 package me.morpheus.dtpunishment.test;
 
-import static org.mockito.Matchers.any;
 import static org.mockito.Mockito.*;
 
 import java.time.Instant;
@@ -70,7 +69,7 @@ public class PlayerChatEventsTest extends TestCase {
 
 		mockChatConfig = spy(ChatConfig.class);
 
-		ArrayList<Player> onlinePlayers = new ArrayList<Player>();
+		ArrayList<Player> onlinePlayers = new ArrayList<>();
 		onlinePlayers.add(mockPlayer);
 		onlinePlayers.add(mockOtherPlayer);
 

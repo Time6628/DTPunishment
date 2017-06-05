@@ -90,7 +90,7 @@ public class MainConfig {
 		}
 
 		public Punishments() {
-			banpoints = new ArrayList<Punishment>();
+			banpoints = new ArrayList<>();
 			banpoints.add(createPunishment(10, "1d"));
 			banpoints.add(createPunishment(20, "2d"));
 			banpoints.add(createPunishment(30, "3d"));
@@ -102,7 +102,7 @@ public class MainConfig {
 			banpoints.add(createPunishment(90, "28d"));
 			banpoints.add(createPunishment(100, "168d"));
 
-			mutepoints = new ArrayList<Punishment>();
+			mutepoints = new ArrayList<>();
 			mutepoints.add(createPunishment(5, "5m"));
 			mutepoints.add(createPunishment(10, "10m"));
 			mutepoints.add(createPunishment(20, "30m"));
@@ -138,15 +138,15 @@ public class MainConfig {
 		public List<String> admin;
 
 		public Aliases() {
-			banpoints = new ArrayList<String>();
+			banpoints = new ArrayList<>();
 			banpoints.add("banpoints");
 			banpoints.add("bp");
 
-			mutepoints = new ArrayList<String>();
+			mutepoints = new ArrayList<>();
 			mutepoints.add("mutepoints");
 			mutepoints.add("mp");
 
-			admin = new ArrayList<String>();
+			admin = new ArrayList<>();
 			admin.add("dtp");
 			admin.add("dtpunish");
 		}

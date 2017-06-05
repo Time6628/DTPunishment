@@ -13,7 +13,7 @@ import me.morpheus.dtpunishment.WordChecker;
 import me.morpheus.dtpunishment.configuration.ConfigurationManager;
 import me.morpheus.dtpunishment.utils.Util;
 
-public class CommandReloadConfig implements CommandExecutor {
+class CommandReloadConfig implements CommandExecutor {
 
 	private ConfigurationManager configurationManager;
 

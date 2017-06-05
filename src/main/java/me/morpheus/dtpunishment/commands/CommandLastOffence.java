@@ -14,7 +14,7 @@ import me.morpheus.dtpunishment.data.ChatOffenceData;
 import me.morpheus.dtpunishment.data.ChatOffenceData.OffenceDetail;
 import me.morpheus.dtpunishment.utils.Util;
 
-public class CommandLastOffence implements CommandExecutor {
+class CommandLastOffence implements CommandExecutor {
 
 	private ChatOffenceData chatOffenceData;
 

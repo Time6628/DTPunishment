@@ -12,7 +12,7 @@ public class ChatOffenceData {
 	private Map<UUID, OffenceDetail> lastOffence;
 
 	public ChatOffenceData() {
-		lastOffence = new HashMap<UUID, OffenceDetail>();
+		lastOffence = new HashMap<>();
 	}
 
 	public OffenceDetail getLastOffence(UUID uuid) {

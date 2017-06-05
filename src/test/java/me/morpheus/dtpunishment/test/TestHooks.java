@@ -34,7 +34,7 @@ import org.spongepowered.api.Sponge;
 import java.lang.reflect.Field;
 import java.lang.reflect.Modifier;
 
-public final class TestHooks {
+final class TestHooks {
 
     private static Field gameField;
 
@@ -63,7 +63,7 @@ public final class TestHooks {
         modifiersField.setInt(field, field.getModifiers() & ~Modifier.FINAL);
     }
 
-    public static void setStaticFinalField(Field field, Object value)
+    private static void setStaticFinalField(Field field, Object value)
             throws NoSuchFieldException, IllegalAccessException {
         removeFinal(field);
         field.set(null, value);

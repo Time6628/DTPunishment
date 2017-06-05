@@ -39,7 +39,7 @@ public class ChatConfig {
 		public int mutepoints = 4;
 
 		@Setting(comment = "list of words that are banned on the server - e.g. [naughty, words, go, here]")
-		public List<String> words = new ArrayList<String>();
+		public List<String> words = new ArrayList<>();
 	}
 
 	@ConfigSerializable

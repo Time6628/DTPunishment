@@ -42,7 +42,7 @@ public class CommandManager {
 	@Inject
 	public CommandManager(Injector injector, org.spongepowered.api.command.CommandManager commandManager, Logger logger,
 			DTPunishment plugin, MainConfig mainConfig) {
-		mappedCommands = new ArrayList<CommandMapping>();
+		mappedCommands = new ArrayList<>();
 		this.injector = injector;
 		this.logger = logger;
 		this.plugin = plugin;

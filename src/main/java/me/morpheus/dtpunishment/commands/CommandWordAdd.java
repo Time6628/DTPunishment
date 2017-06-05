@@ -25,7 +25,7 @@ import ninja.leaping.configurate.hocon.HoconConfigurationLoader;
 import ninja.leaping.configurate.loader.ConfigurationLoader;
 import ninja.leaping.configurate.objectmapping.ObjectMappingException;
 
-public class CommandWordAdd implements CommandExecutor {
+class CommandWordAdd implements CommandExecutor {
 
 	private ChatConfig chatConfig;
 
@@ -44,7 +44,7 @@ public class CommandWordAdd implements CommandExecutor {
 	@Override
 	public CommandResult execute(CommandSource src, CommandContext args) throws CommandException {
 
-		Collection<String> words = args.<String>getAll("word");
+		Collection<String> words = args.getAll("word");
 		List<String> actual = chatConfig.banned.words;
 
 		if (words.size() == 0) {
@@ -52,7 +52,7 @@ public class CommandWordAdd implements CommandExecutor {
 			return CommandResult.empty();
 		}
 
-		ArrayList<String> wordsAdded = new ArrayList<String>();
+		ArrayList<String> wordsAdded = new ArrayList<>();
 
 		for (String word : words) {
 			if (actual.contains(word)) {

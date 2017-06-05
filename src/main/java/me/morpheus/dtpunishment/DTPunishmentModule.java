@@ -13,9 +13,9 @@ import me.morpheus.dtpunishment.data.DataStore;
 import me.morpheus.dtpunishment.data.FileDataStore;
 import me.morpheus.dtpunishment.data.MySqlDataStore;
 
-public class DTPunishmentModule implements Module {
+class DTPunishmentModule implements Module {
 
-	MainConfig config;
+	private MainConfig config;
 
 	public DTPunishmentModule(MainConfig config) {
 		this.config = config;
@@ -35,7 +35,7 @@ public class DTPunishmentModule implements Module {
 		binder.bind(Server.class).toInstance(Sponge.getServer());
 		binder.bind(CommandManager.class).toInstance(Sponge.getCommandManager());
 
-		binder.bind(ConfigurationManager.class).in(Scopes.SINGLETON);
+		binder.bind(ConfigurationManager.class);
 	}
 
 }

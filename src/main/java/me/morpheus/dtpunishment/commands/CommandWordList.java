@@ -18,7 +18,7 @@ import com.google.inject.Inject;
 import me.morpheus.dtpunishment.configuration.ChatConfig;
 import me.morpheus.dtpunishment.utils.Util;
 
-public class CommandWordList implements CommandExecutor {
+class CommandWordList implements CommandExecutor {
 
 	private ChatConfig chatConfig;
 
@@ -31,7 +31,7 @@ public class CommandWordList implements CommandExecutor {
 	public CommandResult execute(CommandSource src, CommandContext args) throws CommandException {
 
 		PaginationList.Builder builder = PaginationList.builder();
-		List<Text> contents = new ArrayList<Text>();
+		List<Text> contents = new ArrayList<>();
 
 		for (String s : chatConfig.banned.words.stream().sorted().collect(Collectors.toList())) {
 			contents.add(Text.of(TextColors.RED, s));

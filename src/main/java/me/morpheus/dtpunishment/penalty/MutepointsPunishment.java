@@ -1,7 +1,6 @@
 package me.morpheus.dtpunishment.penalty;
 
 import java.time.Instant;
-import java.util.Optional;
 import java.util.UUID;
 
 import org.slf4j.Logger;
@@ -10,7 +9,6 @@ import org.spongepowered.api.entity.living.player.Player;
 import org.spongepowered.api.entity.living.player.User;
 import org.spongepowered.api.text.Text;
 import org.spongepowered.api.text.format.TextColors;
-import org.spongepowered.api.text.format.TextStyles;
 
 import com.google.inject.Inject;
 import com.google.inject.Singleton;

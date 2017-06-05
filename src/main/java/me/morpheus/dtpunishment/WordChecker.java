@@ -22,7 +22,7 @@ public class WordChecker {
 
 	private ChatConfig chatConfig;
 
-	private Map<UUID, List<String>> map = new HashMap<UUID, List<String>>();
+	private Map<UUID, List<String>> map = new HashMap<>();
 
 	private Instant previous;
 
@@ -55,7 +55,7 @@ public class WordChecker {
 				if (s.startsWith("*")) {
 					sb.append(s.substring(1));
 				} else {
-					sb.append("\\b" + s + "\\b");
+					sb.append("\\b").append(s).append("\\b");
 				}
 			}
 
